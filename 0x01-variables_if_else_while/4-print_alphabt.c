@@ -9,7 +9,7 @@
 int main(void)
 {
 	char lett = 'a';
-	
+
 	while (lett <= 'z')
 	{
 		if (lett != 'e' && lett != 'q')
