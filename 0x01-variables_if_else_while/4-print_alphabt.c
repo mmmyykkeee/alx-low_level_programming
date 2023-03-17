@@ -3,21 +3,22 @@
 /**
  * main - entry point
  *
- * Return: always 0 (success)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-char let;
+    char letter = 'a';
 
-for (let = 'a'; let <= 'z'; let++)
+    while (letter <= 'z')
     {
-	    if (let != 'e' && let != 'q')
-	    {
-		    putchar(let);
-	    }
+        if (letter != 'e' && letter != 'q')
+            putchar(letter);
+        letter++;
     }
 
     putchar('\n');
 
     return (0);
 }
+
