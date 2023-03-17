@@ -13,7 +13,7 @@ int main(void)
     {
 	    if (let != 'e' && let != 'q')
 	    {
-		    putvhar(let);
+		    putchar(let);
 	    }
     }
 
