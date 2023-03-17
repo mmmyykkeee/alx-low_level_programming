@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - entry point 
+ * main - entry point
  *
  * Return: always 0 (success)
  */
 int main(void)
 {
-    char let;
+char let;
 
-    for (let = 'a'; let <= 'z'; let++)
+for (let = 'a'; let <= 'z'; let++)
     {
 	    if (let != 'e' && let != 'q')
 	    {
