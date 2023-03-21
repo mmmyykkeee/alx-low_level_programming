@@ -8,6 +8,6 @@ int main(void)
 {
 	char text[] = "_putchar";
 
-	printf("%s\n", text);	
+	printf("%s\n", text);
 	return (0);
 }
