@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ * print_alphabet_x10 - prints the alphabets 10 times in lowecase
+ *
  * main - entry point
  *
  * Return: Always 0 (Success)
