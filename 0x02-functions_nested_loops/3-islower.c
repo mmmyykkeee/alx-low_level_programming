@@ -3,9 +3,9 @@
 /**
  * _islower - prints if the number is lower than 1
  *
- * c -integer
+ * @c -integer
  *
- * Return: Always 0 (Success)
+ * Return: 1 if c is lowercase and 0 otherwise
  */
 
 int _islower(int c)
