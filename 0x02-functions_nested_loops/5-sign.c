@@ -5,7 +5,7 @@
  *
  * @n: the value
  *
- * return: - or +
+ * Return: - or +
  */
 
 int print_sign(int n)
