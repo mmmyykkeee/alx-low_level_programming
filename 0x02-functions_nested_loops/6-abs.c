@@ -3,6 +3,8 @@
 /**
  * _abs - the prototype function
  *
+ * @n: is the subject value
+ *
  * Return: gives 0 or 1 of the value
  */
 
