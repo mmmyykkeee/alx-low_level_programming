@@ -3,7 +3,9 @@
 /**
  * main - entry point
  *
- * Return: always 0
+ * Description: prints fizzBuzz
+ *
+ * Return: void
  */
 int main(void) 
 {
