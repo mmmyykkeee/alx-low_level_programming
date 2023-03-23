@@ -5,10 +5,6 @@
  *
  * @size: the squaer size
  *
- * @i: the value
- *
- * @j: the value
- *
  * Return: Always 0
  */
 
