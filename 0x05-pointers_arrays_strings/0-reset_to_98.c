@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - is the prototype function
- * @*n: is the initial value
+ * @n: is the initial value
  * Return: Always 0
  */
 
