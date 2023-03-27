@@ -1,1 +1,1 @@
-This is Pointers, Arrays and Strings Task
+Reet Directory of the Project
