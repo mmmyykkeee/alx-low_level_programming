@@ -2,7 +2,7 @@
 
 /**
  * leet - is the value to compare
- * @*: is the value
+ * @str: is the value
  */
 
 char *leet(char *str)
