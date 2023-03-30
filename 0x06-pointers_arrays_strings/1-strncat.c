@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - is the string to copy
+ * _strncat - is the string to copy
  * @dest: the destination string
  * @src: the string to concatenate
  * @n: is the number of the value
