@@ -9,6 +9,7 @@ unsigned int _strlen(char *s);
 void _puts(char *s);
 int _putchar(char c);
 char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
 
 /* macro definitions */
 #define UNUSED(x) (void)(x)
