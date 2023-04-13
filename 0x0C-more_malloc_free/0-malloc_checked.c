@@ -8,6 +8,7 @@
  * Return: a pointer to the allocated memory
  * If malloc fails, causes normal process termination
  */
+
 void *malloc_checked(unsigned int b)
 {
 	void *ptr = malloc(b);
