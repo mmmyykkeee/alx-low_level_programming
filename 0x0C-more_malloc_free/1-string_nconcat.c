@@ -1,38 +1,46 @@
-#include "main.h"
 #include <stdlib.h>
-/**
- * string_nconcat - concat 2 strings
- * @s1: string 1
- * @s2: string 2
- * @n: max length
- * Return: cc
- */
+#include <stdio.h>
+#include <string.h>
 
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: the first string to concatenate
+ * @s2: the second string to concatenate
+ * @n: the number of bytes from s2 to concatenate
+ *
+ * Return: a pointer to a newly allocated space in memory
+ * containing s1 followed by the first n bytes of s2, and null terminated
+ * If the function fails, returns NULL
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k;
-	char *cc;
+	char *result;
+	unsigned int s1_len = s1 ? strlen(s1) : 0;
+	unsigned int s2_len = s2 ? strlen(s2) : 0;
 
-	k = n;
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	if (n >= s2_len)
+	{
+	n = s2_len;
+	}
 
-	for (i = 0; s1[i] != '\0'; i++)
-		k++;
+	result = malloc(sizeof(char) * (s1_len + n + 1));
 
-	cc = malloc(sizeof(char) * (k + 1));
-
-	if (cc == NULL)
+	if (result == NULL)
+	{
 		return (NULL);
-	j = 0;
-	for (i = 0; s1[i] != '\0'; i++, j++)
-		cc[j] = s1[i];
-	for (i = 0; s2[i] != '\0' && i < n; i++, j++)
-		cc[j] = s2[i];
+	}
 
-	cc[j] = '\0';
-	return (cc);
+	if (s1)
+	{
+		strncpy(result, s1, s1_len);
+	}
 
+	if (n > 0 && s2)
+	{
+		strncat(result + s1_len, s2, n);
+	}
 
+	result[s1_len + n] = '\0';
+
+	return (result);
+}
