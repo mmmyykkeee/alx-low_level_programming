@@ -2,21 +2,24 @@
 #include <stdlib.h>
 
 /**
- * calloc_checked - Allocates memory for an array using calloc
+ * _calloc - Allocates memory for an array using calloc
  * @nmemb: Number of elements in the array
  * @size: Size of each element in bytes
  *
  * Return: Pointer to the allocated memory
- * If calloc fails, the calloc_checked
+ *         If nmemb or size is 0, returns NULL
+ *         If calloc fails, returns NULL
  */
-void *calloc_checked(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+    void *ptr;
 
-	ptr = calloc(nmemb, size);
-	if (ptr == NULL)
-		exit(98);
+    if (nmemb == 0 || size == 0)
+        return (NULL);
 
-	return (ptr);
+    ptr = calloc(nmemb, size);
+    if (ptr == NULL)
+        return (NULL);
+
+    return (ptr);
 }
-
