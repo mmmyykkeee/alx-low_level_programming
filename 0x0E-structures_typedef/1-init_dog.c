@@ -7,10 +7,11 @@
  * @age: Float for the dog's age
  * @owner: Pointer to a string for the dog's owner's name
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
-	return;
+		return();
 
 	d->name = name;
 	d->age = age;
