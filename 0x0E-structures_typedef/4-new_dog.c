@@ -10,6 +10,7 @@
  *
  * Return: a pointer to the new dog, or NULL if it fails
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
