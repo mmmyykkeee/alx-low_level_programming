@@ -29,5 +29,6 @@ listint_t *reverse_listint(listint_t **head);
 void print_array(const int *array, size_t size);
 void merge_sort(int *array, size_t size);
 listint_t *insert_node(listint_t **head, int number);
+void free_listint2(listint_t **head);
 
 #endif /* LISTS_H */
